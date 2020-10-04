@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WelcomeScreen from './containers/welcomeScreen/WelcomeScreen.js';
+import GamePlay from './containers/GamePlay/GamePlay.js';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 function App() {
+
+  let fontLang = '';
+  if (navigator.language.slice(0, 2) === "en") {
+      fontLang = "'Do Hyeon', sans-serif";
+  } else {
+      fontLang = "'Changa', sans-serif";
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{fontFamily: fontLang}}>
+      <BrowserRouter>
+      <Switch>
+        <Route path='/:gameMode' component={GamePlay}/>
+        <Route path='/' component={WelcomeScreen}/>
+      </Switch>
+      </BrowserRouter>
     </div>
   );
 }

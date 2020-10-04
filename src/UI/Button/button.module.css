@@ -1,0 +1,17 @@
+.ButtonUI {
+    font-family: inherit;
+    color: #FBD46D;
+    background: white;
+    padding: 10px;
+    border: 4px solid #FBD46D;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    margin: 3px;
+}
+
+.ButtonUI:hover {
+    color: white;
+    background: #FBD46D;
+    border-color: #FBD46D;
+    transition: all 0.4s ease 0s;
+}

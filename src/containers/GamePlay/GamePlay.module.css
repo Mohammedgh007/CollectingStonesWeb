@@ -1,0 +1,360 @@
+.GamePlay {
+    width: 100%;
+    height: 100%; 
+    position: fixed;
+    background-color: white;
+    background: content-box radial-gradient(#937991, #462C44);
+}
+
+.TopPos, .HeaderPos, .LeftPos, .RightPos
+, .BottomPos, .BottomRightPos, .bottomLeftPos, .PlayedCardPos{
+    position:fixed;
+    margin:0;
+    padding:0; 
+}
+
+.TopPos{
+    top:0;
+    left:27.5%;
+    right:0;
+    width:40%;
+    height:25%; 
+}
+
+.HeaderPos{
+    top:0;
+    left: 0;
+    right:0;
+    width:25%;
+    height:10%; 
+}
+
+
+
+.LeftPos{
+    top:26%;
+    left:0;
+    right:0;
+    width:40%;
+    height:25%; 
+    margin: 4px;
+}
+
+.RightPos{
+    top:26%;
+    left:60%;
+    right:0;
+    width:40%;
+    height:25%; 
+    margin: 4px;
+}
+
+.BottomPos{
+    top:60%;
+    left:27.5%;
+    right:0;
+    width:45%;
+    height:40%; 
+}
+
+.BottomRightPos{
+    top:75%;
+    left:72.5%;
+    right:0;
+    width:27.5%;
+    height:25%; 
+    display: flex;
+}
+
+.bottomLeftPos{
+    top:75%;
+    left:0;
+    right:0;
+    width:27.5%;
+    height:25%; 
+}
+
+.PlayedCardPos{
+    top:35%;
+    left:45%;
+    right:0;
+    width:10%;
+    height:15%; 
+}
+
+.inPosGameRules{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+
+.CardsDeck{
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 40%;
+    height:80%;
+    margin-bottom: 4px;
+    margin-left: 5px; 
+    align-content: center;
+    overflow: hidden;
+}
+
+.CardsDeckAnimBottm{
+    animation-name: drawCardBottom;
+    animation-duration: 0.3s;
+}
+
+@keyframes drawCardBottom{
+    0% {
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        width: 10%;
+        height: 15%; 
+    }
+    50%{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 10%;
+        height: 15%; 
+    }
+    100% {
+        position: fixed;
+        top: 80%;
+        left: 50%;
+        width: 10%;
+        height: 15%;
+    }
+}
+
+.CardsDeckAnimTop{
+    animation-name: drawCardTop;
+    animation-duration: 0.3s;
+}
+
+@keyframes drawCardTop{
+    0% {
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        width: 10%;
+        height: 15%; 
+    }
+    50%{
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 10%;
+        height: 15%; 
+    }
+    100% {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        width: 10%;
+        height: 15%;
+    }
+}
+
+.CardsDeckAnimLeft{
+    animation-name: drawCardLeft;
+    animation-duration: 0.3s;
+}
+
+@keyframes drawCardLeft{
+    0% {
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        width: 10%;
+        height: 15%; 
+    }
+    50%{
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 10%;
+        height: 15%; 
+    }
+    100% {
+        position: fixed;
+        top: 30%;
+        left: 10%;
+        width: 10%;
+        height: 15%;
+    }
+}
+
+.CardsDeckAnimRight{
+    animation-name: drawCardRight;
+    animation-duration: 0.3s;
+}
+
+@keyframes drawCardRight{
+    0% {
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        width: 10%;
+        height: 15%; 
+    }
+    50%{
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 10%;
+        height: 15%; 
+    }
+    100% {
+        position: fixed;
+        top: 30%;
+        left: 90%;
+        width: 10%;
+        height: 15%;
+    }
+}
+
+/*for  mobiles*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 599px){   
+    .TopPos{
+        top:20%;
+        left:0;
+        right:0;
+        width:100%;
+        height:15%; 
+    }
+    
+    .HeaderPos{
+        top:0;
+        left: 0;
+        right:0;
+        width:100%;
+        height:4%; 
+        background-color: orange;
+    }
+    
+    
+    
+    .LeftPos{
+        top:4.1%;
+        left:0;
+        right:0;
+        width:100%;
+        height:15%; 
+    }
+    
+    .RightPos{
+        top:36%;
+        left:0%;
+        right:0;
+        width:100%;
+        height:15%;
+    }
+    
+    .BottomPos{
+        top:75%;
+        left:0;
+        right:0;
+        width:100%;
+        height:25%; 
+    }
+    
+    .BottomRightPos{
+        top:60%;
+        left:60%;
+        right:0;
+        width:40%;
+        height:10%; 
+    }
+    
+    .bottomLeftPos{
+        top:60%;
+        left:0;
+        right:0;
+        width:40%;
+        height:10%;  
+    }
+    
+    .PlayedCardPos{
+        top:55%;
+        left:40%;
+        right:0;
+        width:20%;
+        height:15%; 
+    }
+}
+
+/*for tablets*/
+@media only screen and (min-device-width: 600px) and (max-device-width: 1025px){
+    .TopPos{
+        top:4%;
+        left:0;
+        right:0;
+        width:100%;
+        height:17%; 
+        border: 2px solid black;
+    }
+    
+    .HeaderPos{
+        top:0;
+        left: 0;
+        right:0;
+        width:100%;
+        height:4%; 
+        background-color: orange;
+    }
+    
+    
+    
+    .LeftPos{
+        top:21%;
+        left:0;
+        right:0;
+        width:35%;
+        height:44%; 
+    }
+    
+    .RightPos{
+        top:21%;
+        left:65%;
+        right:0;
+        width:35%;
+        height:44%; 
+    }
+    
+    .BottomPos{
+        top:75%;
+        left:0;
+        right:0;
+        width:100%;
+        height:25%; 
+    }
+    
+    .BottomRightPos{
+        top:65%;
+        left:60%;
+        right:0;
+        width:40%;
+        height:10%; 
+    }
+    
+    .bottomLeftPos{
+        top:65%;
+        left:0;
+        right:0;
+        width:40%;
+        height:10%;  
+    }
+    
+    .PlayedCardPos{
+        top:30%;
+        left:40%;
+        right:0;
+        width:20%;
+        height:20%; 
+    }
+}
+
+

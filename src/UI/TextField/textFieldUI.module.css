@@ -1,0 +1,31 @@
+.langRight {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap:15px;
+    float: right;
+}
+
+Input.langRight{
+    grid-column: 1;
+}
+
+.langLeft {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap:15px;
+    float: left;
+}
+
+
+Input.langLeft{
+    grid-column: 2;
+}
+
+input{
+    height: max-content;
+    background-color: lightgray;
+    border: transparent;
+    border-bottom: #E8EAD3 2px solid;
+    border-radius: 5px;
+    font-size: large;
+}

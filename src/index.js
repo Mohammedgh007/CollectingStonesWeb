@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {gameManager} from '../src/store/reducers/gameManager.js';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const appStore = createStore(gameManager);
+
+let app = (
+  <Provider store= {appStore}>
+    <App/>
+  </Provider>
+);
+
+ReactDOM.render(app, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
