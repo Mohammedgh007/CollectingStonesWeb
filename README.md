@@ -1,1 +1,1 @@
-# CollectingStonesWeb
+It's a web project using React.js for front-end and Firebase for the back-end.
